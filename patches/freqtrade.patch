@@ -1,0 +1,14 @@
+diff --git a/Dockerfile b/Dockerfile
+index d3890a25b..39743b1ef 100644
+--- a/Dockerfile
++++ b/Dockerfile
+@@ -53,6 +53,7 @@ RUN pip install -e . --user --no-cache-dir --no-build-isolation \
+   && mkdir /freqtrade/user_data/ \
+   && freqtrade install-ui
+ 
+-ENTRYPOINT ["freqtrade"]
++#ENTRYPOINT ["freqtrade"]
+ # Default to trade mode
+-CMD [ "trade" ]
++#CMD [ "trade" ]
++ENTRYPOINT ["/bin/bash"]

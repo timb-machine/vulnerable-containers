@@ -1,0 +1,10 @@
+diff --git a/dev/Dockerfile b/dev/Dockerfile
+index 2284d9c..63d0d7e 100644
+--- a/dev/Dockerfile
++++ b/dev/Dockerfile
+@@ -95,4 +95,4 @@ COPY scripts/wait-for.sh /usr/bin/wait-for.sh
+ 
+ EXPOSE 80 443
+ 
+-CMD ["/docker-entrypoint.sh"]
++CMD ["/bin/bash"]

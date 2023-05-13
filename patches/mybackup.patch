@@ -1,0 +1,28 @@
+diff --git a/2.5/Dockerfile b/2.5/Dockerfile
+index b599e4c..f6e9f34 100644
+--- a/2.5/Dockerfile
++++ b/2.5/Dockerfile
+@@ -4,11 +4,13 @@ LABEL MAINTAINER="Francesco Bianco <info@javanile.org>"
+ WORKDIR /var/www/html
+ 
+ ## Settings
+-ENV MB_SRC=http://sourceforge.net/projects/phpmybackup/files/phpMyBackupPro
++ENV MB_SRC=https://sourceforge.net/projects/phpmybackup/files/phpMyBackupPro
+ ENV MB_VER=2.5
+ ENV PHP_MEMORY_LIMIT=32M
+ ENV PHP_MAX_EXECUTION_TIME=30
+ 
++RUN cat /etc/apt/sources.list | sed "s/deb.debian.org/archive.debian.org/g" | egrep -v "stretch.updates" >/etc/apt/sources.list.new; mv /etc/apt/sources.list.new /etc/apt/sources.list
++
+ ## Install dependencies
+ RUN apt-get update \
+  && apt-get install -y --no-install-recommends unzip \
+@@ -17,7 +19,7 @@ RUN apt-get update \
+ COPY php.ini /usr/local/etc/php/php.ini
+ 
+ ## Download
+-RUN curl -o mb.zip -SL ${MB_SRC}/phpMyBackupPro%20${MB_VER}/phpMyBackupPro-${MB_VER}.zip \
++RUN curl -o mb.zip -SL -k ${MB_SRC}/phpMyBackupPro%20${MB_VER}/phpMyBackupPro-${MB_VER}.zip/download \
+  && unzip -q mb && rm mb.zip && mv phpMyBackupPro-${MB_VER} mybackup \
+  && mv mybackup/definitions.php mybackup/definitions.override.php \
+  && chmod 777 mybackup/global_conf.php mybackup/export
