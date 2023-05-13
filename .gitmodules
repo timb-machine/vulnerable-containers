@@ -1,17 +1,17 @@
 [submodule "docker-atlassian-stash"]
-	path = docker-atlassian-stash
+	path = container-artefacts/docker-atlassian-stash
 	url = https://bitbucket.com/atlassian/docker-atlassian-stash
 [submodule "issuebot"]
-	path = issuebot
+	path = container-artefacts/issuebot
 	url = https://www.github.com/PecanProject/issuebot
 [submodule "i2pjump"]
-	path = i2pjump
+	path = container-artefacts/i2pjump
 	url = https://www.github.com/chris-barry/i2pjump
 [submodule "mybackup"]
-	path = mybackup
+	path = container-artefacts/mybackup
 	url = https://www.github.com/javanile/mybackup
 [submodule "freqtrade"]
-	path = freqtrade
+	path = container-artefacts/freqtrade
 	url = https://github.com/freqtrade/freqtrade
 [submodule "pol"]
 	path = pol
@@ -20,8 +20,8 @@
 	path = docker-gitlab
 	url = https://github.com/sameersbn/docker-gitlab
 [submodule "redmine"]
-	path = redmine
+	path = container-artefacts/redmine
 	url = https://github.com/docker-library/redmine
 [submodule "passbolt_docker"]
-	path = passbolt_docker
+	path = container-artefacts/passbolt_docker
 	url = https://github.com/passbolt/passbolt_docker
