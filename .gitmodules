@@ -1,0 +1,27 @@
+[submodule "docker-atlassian-stash"]
+	path = docker-atlassian-stash
+	url = https://bitbucket.com/atlassian/docker-atlassian-stash
+[submodule "issuebot"]
+	path = issuebot
+	url = https://www.github.com/PecanProject/issuebot
+[submodule "i2pjump"]
+	path = i2pjump
+	url = https://www.github.com/chris-barry/i2pjump
+[submodule "mybackup"]
+	path = mybackup
+	url = https://www.github.com/javanile/mybackup
+[submodule "freqtrade"]
+	path = freqtrade
+	url = https://github.com/freqtrade/freqtrade
+[submodule "pol"]
+	path = pol
+	url = https://osm.etsi.org/gitlab/osm/pol
+[submodule "docker-gitlab"]
+	path = docker-gitlab
+	url = https://github.com/sameersbn/docker-gitlab
+[submodule "redmine"]
+	path = redmine
+	url = https://github.com/docker-library/redmine
+[submodule "passbolt_docker"]
+	path = passbolt_docker
+	url = https://github.com/passbolt/passbolt_docker
