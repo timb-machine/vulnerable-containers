@@ -4,7 +4,7 @@
 
 ### [issuebot](https://hub.docker.com/r/pecan/issuebot)
 
-(see patches/issuebot.patch)
+(see src/patches/issuebot.patch)
 
 ```docker exec -it issuebot /bin/sh```
 
@@ -15,7 +15,7 @@
 
 ### [i2pjump](https://hub.docker.com/r/geti2p/i2pjump)
 
-(see patches/i2pjump.patch)
+(see src/patches/i2pjump.patch)
 
 ```docker exec -it i2pjump /bin/bash```
 
@@ -24,7 +24,7 @@
 
 ### [stash](https://hub.docker.com/r/atlassian/stash)
 
-(see patches/docker-atlassian-stash.patch)
+(see src/patches/docker-atlassian-stash.patch)
 
 ```docker exec -it stash /bin/bash```
 
@@ -45,7 +45,7 @@
 
 ### [mybackup](https://hub.docker.com/r/javanile/mybackup)
 
-(see patches/mybackup.patch, technically we fixed the apt-get config and source URL so that it would build)
+(see src/patches/mybackup.patch, technically we fixed the apt-get config and source URL so that it would build)
 
 ```docker exec -it mybackup /bin/bash```
 
@@ -57,7 +57,7 @@
 
 ### [freqtrade](https://hub.docker.com/r/freqtradeorg/freqtrade)
 
-(see patches/freqtrade.patch, technically we changed the entrypoint)
+(see src/patches/freqtrade.patch, technically we changed the entrypoint)
 
 ```docker exec -it freqtrade /bin/bash```
 
@@ -75,7 +75,7 @@
 
 ### [passbolt](https://hub.docker.com/r/passbolt/passbolt)
 
-(see patches/passbolt_docker.patch, technically we changed the entrypoint)
+(see src/patches/passbolt_docker.patch, technically we changed the entrypoint)
 
 ```docker exec -it passbolt /bin/bash```
 
@@ -83,4 +83,4 @@
   - www-root
 - creds
 - key material
-- config options-
+- config options
