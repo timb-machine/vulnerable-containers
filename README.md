@@ -57,7 +57,7 @@
 
 ### [freqtrade](https://hub.docker.com/r/freqtradeorg/freqtrade)
 
-(see [/src/patches/freqtrade.patch](../master/src/patches/freqtrade.patch)), technically we changed the entrypoint)
+(see [/src/patches/freqtrade.patch](../master/src/patches/freqtrade.patch), technically we changed the entrypoint)
 
 ```docker exec -it freqtrade /bin/bash```
 
