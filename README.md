@@ -1,4 +1,4 @@
-# vulnerable-containers
+# vulnerable-containers`
 
 ## Manipulated examples
 
@@ -8,10 +8,10 @@
 
 ```docker exec -it issuebot /bin/sh```
 
-- PATH
-- umask
-- API keys
-- iptables
+* PATH
+* umask
+* API keys
+* iptables
 
 ### [i2pjump](https://hub.docker.com/r/geti2p/i2pjump)
 
@@ -19,8 +19,8 @@
 
 ```docker exec -it i2pjump /bin/bash```
 
-- old Debian release
-- calls out to HTTP service
+* old Debian release
+* calls out to HTTP service
 
 ### [stash](https://hub.docker.com/r/atlassian/stash)
 
@@ -28,18 +28,18 @@
 
 ```docker exec -it stash /bin/bash```
 
-- perms
-- running user
-- data in /tmp
-- old Debian release
-- readable from log: CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
-- staff perms on /usr/local
-- logs generally
-  - tomcat
-  - /tmp
-- admin, admin2 user
-- salt
-- admin perms on /opt/atlassian/stash/bin
+* perms
+* running user
+* data in /tmp
+* old Debian release
+* readable from log: CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
+* staff perms on /usr/local
+* logs generally
+  * tomcat
+  * /tmp
+* admin, admin2 user
+* salt
+* admin perms on /opt/atlassian/stash/bin
 
 ## Fresh from the docks
 
@@ -49,10 +49,10 @@
 
 ```docker exec -it mybackup /bin/bash```
 
-- old Debian release
-- weak config permissions
-- port 80
-- iptables
+* old Debian release
+* weak config permissions
+* port 80
+* iptables
 
 
 ### [freqtrade](https://hub.docker.com/r/freqtradeorg/freqtrade)
@@ -61,17 +61,17 @@
 
 ```docker exec -it freqtrade /bin/bash```
 
-- sudoers
-  - root me
-- LD_LIBRARY_PATH
+* sudoers
+  * root me
+* LD_LIBRARY_PATH
 
 ### [redmine](https://hub.docker.com/_/redmine)
 
 ```docker exec -it redmine /bin/bash```
 
-- web app creds
-- perms
-- port 3000
+* web app creds
+* perms
+* port 3000
 
 ### [passbolt](https://hub.docker.com/r/passbolt/passbolt)
 
@@ -79,8 +79,8 @@
 
 ```docker exec -it passbolt /bin/bash```
 
-- perms
-  - www-root
-- creds
-- key material
-- config options
+* perms
+  * www-root
+* creds
+* key material
+* config options
