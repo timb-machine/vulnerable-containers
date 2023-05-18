@@ -1,4 +1,4 @@
-# vulnerable-containers`
+# vulnerable-containers
 
 ## Usage
 
