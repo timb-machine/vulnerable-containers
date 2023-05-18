@@ -2,7 +2,7 @@
 
 ## Usage
 
-* ```src/tools/build.sh``
+* ```src/tools/build.sh```
 * ```src/tools/non-interactive.sh```
 
 You can access the containers using the ```docker exec``` containers below. Tools can be copied in using ```docker cp```.
