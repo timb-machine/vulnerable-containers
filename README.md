@@ -59,7 +59,7 @@ You can access the containers using the ```docker exec``` containers below. Tool
 * salt
 * admin perms on /opt/atlassian/stash/bin
 
-## Fresh from the docks
+## Fresh from the docks
 
 ### [mybackup](https://hub.docker.com/r/javanile/mybackup)
 
