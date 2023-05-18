@@ -1,5 +1,23 @@
 # vulnerable-containers`
 
+## Usage
+
+* ```src/tools/build.sh``
+* ```src/tools/non-interactive.sh```
+
+You can access the containers using the ```docker exec``` containers below. Tools can be copied in using ```docker cp```.
+
+### Recommended tools
+
+* https://github.com/CiscoCXSecurity/nopc
+* https://github.com/CiscoCXSecurity/unix_collector
+* https://github.com/CiscoCXSecurity/unix-privesc-check - note that there are 2 branches
+* https://github.com/CiscoCXSecurity/sudo-parser
+* https://github.com/slimm609/checksec.sh
+* https://github.com/CiscoCXSecurity/UNIXSocketScanner
+* https://gist.github.com/timb-machine/d624b39a6dc0022882479fb2a3c4fe58 - badrpath.sh (Linux version)
+* https://github.com/timb-machine/local/blob/develop/scripts/mine/grace.sh
+
 ## Manipulated examples
 
 ### [issuebot](https://hub.docker.com/r/pecan/issuebot)
@@ -53,7 +71,6 @@
 * weak config permissions
 * port 80
 * iptables
-
 
 ### [freqtrade](https://hub.docker.com/r/freqtradeorg/freqtrade)
 
